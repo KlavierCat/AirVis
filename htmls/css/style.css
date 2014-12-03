@@ -1,12 +1,12 @@
 /*Global Setting*/
 body{
-    font-family:"Neue Helvetica", Helvetica, sans-serif;
-    background-color:#000000;
-    color:#ffffff;
+    font-family:"Neue Helvetica", Helvetica, Arial, sans-serif;
 }
 
 /*Front Page*/
 .front{
+    background-color:#000000;
+    color:#ffffff;
     margin:7%;
 }
 .front h1{
@@ -55,3 +55,106 @@ body{
 }
 /*End of Front Page*/
 
+/* Map Page */
+.map{
+    text-align:center;
+}
+#mapinfo{
+    margin:auto;
+}
+#mapreset{
+    margin:auto;
+    margin-top:25px;
+}
+#note-holder i{
+    color:#999;
+}
+#note-holder i:hover{
+    color:#000;
+}
+#mapdate{ /* #mapdate slider for webkit browsers*/
+    -webkit-appearance:none;
+}
+#mapdate::-webkit-slider-runnable-track{
+    width:300px;
+    height:5px;
+    background:#ddd;
+    border: none;
+    border-radius:3px;
+}
+#mapdate::-webkit-slider-thumb{
+    -webkit-appearance:none;
+    border:none;
+    height:15px;
+    width:16px;
+    border-radius:50%;
+    background:#000;
+    margin-top:-4px;
+}
+#mapdate:focus{
+    outline:none;
+}
+#mapdate:focus::-webkit-slider-runnable-track{
+    background:#ccc;
+}
+#mapdate{/* #mapdate slider for Firefox*/
+    border:1px solid white; /*fix for FF unable to apply focus style bug*/
+    width:300px; /* required for proper track sizing in FF*/
+}
+#mapdate::-moz-range-track{
+    width:300px;
+    height:5px;
+    background:#ddd;
+    border:none;
+    border-radius:3px;
+}
+#mapdate::-moz-range-thumb{
+    border:none;
+    height:16px;
+    width:16px;
+    border-radius: 50%;
+    background: #000;
+}
+#mapdate:-moz-focusring{ /* hide the outline behind the border*/
+    outline:1px solid white;
+    outline-offset:-1px;
+}
+#mapdate:focus::-moz-range-track{
+    background:#ccc;
+}
+#mapdate::-ms-track { /* for IE 10+ */
+    width: 300px;
+    height: 5px;
+    
+    /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
+    background: transparent;
+    
+    /*leave room for the larger thumb to overflow with a transparent border */
+    border-color: transparent;
+    border-width: 6px 0;
+
+    /*remove default tick marks*/
+    color: transparent;
+}
+#mapdate::-ms-fill-lower {
+    background: #777;
+    border-radius: 10px;
+}
+#mapdate::-ms-fill-upper {
+    background: #ddd;
+    border-radius: 10px;
+}
+#mapdate::-ms-thumb {
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #000;
+}
+#mapdate:focus::-ms-fill-lower {
+    background: #888;
+}
+#mapdate:focus::-ms-fill-upper {
+    background: #ccc;
+}
+/* End of Map Page */

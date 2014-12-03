@@ -1,22 +1,22 @@
 $(document).ready(function(){
-    $("#map-icon").on('mouseenter', 
+    $("#map-icon").on('mouseenter',
         function() {
-            $(".front").css({"background-color": "#0971b2"
-        });
+            $(".front").animate({"background-color": "#0971b2"
+        }, 'ease-in-out');
     });
     $("#map-icon").on('mouseleave',
         function() {
-            $(".front").css({"background-color":"#000000"
-        });
+            $(".front").animate({"background-color":"#000000"
+        }, 'fast');
     });
     $("#chart-icon").on('mouseenter',
         function() {
-            $(".front").css({"background-color":"#b21212"
-        });
+            $(".front").animate({"background-color":"#b21212"
+        }, 'ease-in-out');
     });
     $("#chart-icon").on('mouseleave',
         function() {
-            $(".front").css({"background-color":"#000000"
-        });
-    });    
+            $(".front").animate({"background-color":"#000000"
+        }, 'fast');
+    });
 });
