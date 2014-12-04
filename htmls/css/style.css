@@ -125,10 +125,10 @@ body{
 #mapdate::-ms-track { /* for IE 10+ */
     width: 300px;
     height: 5px;
-    
+
     /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
     background: transparent;
-    
+
     /*leave room for the larger thumb to overflow with a transparent border */
     border-color: transparent;
     border-width: 6px 0;
@@ -158,3 +158,17 @@ body{
     background: #ccc;
 }
 /* End of Map Page */
+
+/* hard-code version of map.html only*/
+#map-data{
+  position:absolute;
+  left:10px;
+  top:10px;
+}
+#map-data td:nth-child(odd){
+  text-align:left;
+}
+#map-data td:nth-child(even){
+  text-align:center;
+}
+/*end of hard-code version of map.html only*/
