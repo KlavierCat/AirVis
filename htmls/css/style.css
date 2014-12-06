@@ -58,6 +58,7 @@ body{
 /* Map Page */
 .map{
     text-align:center;
+    background-color:#fff;
 }
 #mapinfo{
     margin:auto;
@@ -88,7 +89,7 @@ body{
     height:15px;
     width:16px;
     border-radius:50%;
-    background:#000;
+    background:goldenrod;
     margin-top:-4px;
 }
 #mapdate:focus{
@@ -113,7 +114,7 @@ body{
     height:16px;
     width:16px;
     border-radius: 50%;
-    background: #000;
+    background: goldenrod;
 }
 #mapdate:-moz-focusring{ /* hide the outline behind the border*/
     outline:1px solid white;
@@ -149,7 +150,7 @@ body{
     height: 16px;
     width: 16px;
     border-radius: 50%;
-    background: #000;
+    background: goldenrod;
 }
 #mapdate:focus::-ms-fill-lower {
     background: #888;

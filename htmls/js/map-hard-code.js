@@ -3,6 +3,7 @@ var paper = Raphael("paper1",600,489);
 paper.image("img/china-sm.png",0,0,600,489);
 
 function updateDate(val){
+
     document.getElementById("note-date").innerHTML=pm25[val]["date"];
     document.getElementById("note-bj").innerHTML=pm25[val]["beijing"];
     document.getElementById("note-sh").innerHTML=pm25[val]["shanghai"];
@@ -39,4 +40,22 @@ function updateDate(val){
     //sy.attr("fill", "#f00");
     //sy.attr("stroke",0);
     //sy.attr("fill-opacity", 0.1);
+
+//a function to change the background color of the cells presenting data for each city
+  $(".note-city").each(function(i, obj){
+    if (+$(this).html() <= 50){
+      $(this).css("background-color","#7fff00").css("color","#000");
+    } else if (+$(this).html() <= 100) {
+      $(this).css("background-color","#ffff00").css("color","#000");
+    } else if (+$(this).html() <= 150) {
+      $(this).css("background-color","#ffa500").css("color","#000");
+    } else if (+$(this).html() <= 200) {
+      $(this).css("background-color","#ff4500").css("color","#fff");
+    } else if (+$(this).html() <= 300) {
+      $(this).css("background-color","#800080").css("color","#fff");
+    } else if (+$(this).html() <= 500) {
+      $(this).css("background-color","#800000").css("color","#fff");
+    }
+  });
 };
+//obj == this
