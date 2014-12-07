@@ -60,6 +60,9 @@ body{
     text-align:center;
     background-color:#fff;
 }
+.td-capital{
+    text-transform:capitalize;
+}
 #mapinfo{
     margin:auto;
 }

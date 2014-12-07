@@ -5,10 +5,10 @@ paper.image("img/china-sm.png",0,0,600,489);
 function updateDate(val){
 
     document.getElementById("note-date").innerHTML=pm25[val]["date"];
-    document.getElementById("note-bj").innerHTML=pm25[val]["beijing"];
-    document.getElementById("note-sh").innerHTML=pm25[val]["shanghai"];
-    document.getElementById("note-gz").innerHTML=pm25[val]["guangzhou"];
-    document.getElementById("note-cd").innerHTML=pm25[val]["chengdu"];
+    document.getElementById("note-beijing").innerHTML=pm25[val]["beijing"];
+    document.getElementById("note-shanghai").innerHTML=pm25[val]["shanghai"];
+    document.getElementById("note-guangzhou").innerHTML=pm25[val]["guangzhou"];
+    document.getElementById("note-chengdu").innerHTML=pm25[val]["chengdu"];
 
     var rbj = pm25[val]["beijing"]/5;
     var rsh = pm25[val]["shanghai"]/5;

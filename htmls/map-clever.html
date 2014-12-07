@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html" charset="utf-8"/>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-      <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
+      <script type='text/javascript' src='js/jquery-1.11.0.js'></script>
     <script type="text/javascript" src="js/raphael-min.js"></script>
       <script type="text/javascript" src="data/pm25.json"></script>
       <script type="text/javascript" src="js/mapinfo.js"></script>
@@ -11,13 +11,33 @@
       <link rel="stylesheet" type="text/css" href="css/style.css"/>
   </head>
 
-  <body class="map" onload="printMapInfo()">
+  <body class="map" onload="printMapInfo(pm25)">
     <div id="map-wrapper">
         <div id="paper1"></div>
         <table id="map-data">
-          <!--append <tr><td>Date:</td><td id="note-x" class="note-city"></td></tr>-->
+          <!--<tr>
+            <td>Date:</td>
+            <td id="note-date"></td>
+          </tr>
+          <tr>
+            <td>Beijing:</td>
+            <td class="note-city" id="note-bj"></td>
+          </tr>
+          <tr>
+            <td>Shanghai:</td>
+            <td class="note-city" id="note-sh"></td>
+          </tr>
+          <tr>
+            <td>Guangzhou:</td>
+            <td class="note-city" id="note-gz"></td>
+          </tr>
+          <tr>
+            <td>Chengdu:</td>
+            <td class="note-city" id="note-cd"></td>
+          </tr>-->
         </table>
-        <table>
+
+        <table id="mapinfo">
             <tr>
                 <td colspan="3">
                     <div id="note-holder">
@@ -28,12 +48,12 @@
             </tr>
             <tr>
                 <td>28/10/2013</td>
-                <td><input id="mapdate" type="range" name="date-control" min="0" max="566" step="1" value="0" oninput="updateDate(this.value)" onchange="updateDate(this.value)"></td>
+                <td><input id="mapdate" type="range" name="date-control" min="0" max="565" step="1" value="0" oninput="updateDate(this.value)" onchange="updateDate(this.value)"></td>
                 <td>15/11/2014</td>
             </tr>
         </table>
         <button id="mapreset" type="button" action="setPaper">Reset</button>
     </div>
-  <script type="text/javascript" src="js/map.js"></script>
+  <script type="text/javascript" src="js/map-hard-code.js"></script>
   </body>
 </html>
