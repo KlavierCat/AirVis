@@ -58,6 +58,10 @@ body{
 /* Map Page */
 .map{
     text-align:center;
+    background-color:#fff;
+}
+.td-capital{
+    text-transform:capitalize;
 }
 #mapinfo{
     margin:auto;
@@ -88,7 +92,7 @@ body{
     height:15px;
     width:16px;
     border-radius:50%;
-    background:#000;
+    background:goldenrod;
     margin-top:-4px;
 }
 #mapdate:focus{
@@ -113,7 +117,7 @@ body{
     height:16px;
     width:16px;
     border-radius: 50%;
-    background: #000;
+    background: goldenrod;
 }
 #mapdate:-moz-focusring{ /* hide the outline behind the border*/
     outline:1px solid white;
@@ -125,10 +129,10 @@ body{
 #mapdate::-ms-track { /* for IE 10+ */
     width: 300px;
     height: 5px;
-    
+
     /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
     background: transparent;
-    
+
     /*leave room for the larger thumb to overflow with a transparent border */
     border-color: transparent;
     border-width: 6px 0;
@@ -149,7 +153,7 @@ body{
     height: 16px;
     width: 16px;
     border-radius: 50%;
-    background: #000;
+    background: goldenrod;
 }
 #mapdate:focus::-ms-fill-lower {
     background: #888;
@@ -158,3 +162,17 @@ body{
     background: #ccc;
 }
 /* End of Map Page */
+
+/* hard-code version of map.html only*/
+#map-data{
+  position:absolute;
+  left:10px;
+  top:10px;
+}
+#map-data td:nth-child(odd){
+  text-align:left;
+}
+#map-data td:nth-child(even){
+  text-align:center;
+}
+/*end of hard-code version of map.html only*/
