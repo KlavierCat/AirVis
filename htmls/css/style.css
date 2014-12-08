@@ -58,7 +58,8 @@ body{
 /* Map Page */
 .map{
     text-align:center;
-    background-color:#fff;
+    background-color:#000;
+    color:#fff;
 }
 .td-capital{
     text-transform:capitalize;
@@ -161,18 +162,28 @@ body{
 #mapdate:focus::-ms-fill-upper {
     background: #ccc;
 }
-/* End of Map Page */
 
-/* hard-code version of map.html only*/
-#map-data{
+#map-text{
   position:absolute;
-  left:10px;
+  left:5%;
   top:10px;
+  background-color:rgba(0,0,0,0.6);
+    padding:3px;
+    padding-bottom:10px;
 }
+/*#map-data{
+    background-color:rgba(0,0,0,0.6);
+}*/
 #map-data td:nth-child(odd){
   text-align:left;
 }
 #map-data td:nth-child(even){
   text-align:center;
 }
-/*end of hard-code version of map.html only*/
+#map-title{
+    position:relative;
+}
+#paper1{
+    margin-top:30px;
+}
+/* End of Map Page */

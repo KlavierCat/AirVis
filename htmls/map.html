@@ -14,38 +14,12 @@
   <body class="map" onload="printMapInfo(pm25)">
     <div id="map-wrapper">
         <div id="paper1"></div>
-        <table id="map-data">
-          <!--<tr>
-            <td>Date:</td>
-            <td id="note-date"></td>
-          </tr>
-          <tr>
-            <td>Beijing:</td>
-            <td class="note-city" id="note-bj"></td>
-          </tr>
-          <tr>
-            <td>Shanghai:</td>
-            <td class="note-city" id="note-sh"></td>
-          </tr>
-          <tr>
-            <td>Guangzhou:</td>
-            <td class="note-city" id="note-gz"></td>
-          </tr>
-          <tr>
-            <td>Chengdu:</td>
-            <td class="note-city" id="note-cd"></td>
-          </tr>-->
-        </table>
+        <div id="map-text">
+            <h1 id='map-title'>PM2.5 Index</h1>
+            <table id="map-data"></table>
+        </div>
 
         <table id="mapinfo">
-            <tr>
-                <td colspan="3">
-                    <div id="note-holder">
-                      <i class="fa fa-chevron-circle-left fa-2x"></i>
-                      <i class="fa fa-chevron-circle-right fa-2x"></i>
-                    </div>
-                </td>
-            </tr>
             <tr>
                 <td>28/10/2013</td>
                 <td><input id="mapdate" type="range" name="date-control" min="0" max="565" step="1" value="0" oninput="updateDate(this.value)" onchange="updateDate(this.value)"></td>
