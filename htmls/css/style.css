@@ -58,7 +58,7 @@ body{
 /* Map Page */
 .map{
     text-align:center;
-    background-color:#000;
+    background-color:#252527;
     color:#fff;
 }
 .td-capital{
@@ -66,10 +66,6 @@ body{
 }
 #mapinfo{
     margin:auto;
-}
-#mapreset{
-    margin:auto;
-    margin-top:25px;
 }
 #note-holder i{
     color:#999;
@@ -83,7 +79,7 @@ body{
 #mapdate::-webkit-slider-runnable-track{
     width:300px;
     height:5px;
-    background:#ddd;
+    background:#999;
     border: none;
     border-radius:3px;
 }
@@ -93,23 +89,23 @@ body{
     height:15px;
     width:16px;
     border-radius:50%;
-    background:goldenrod;
+    background:#76daff;
     margin-top:-4px;
 }
 #mapdate:focus{
     outline:none;
 }
 #mapdate:focus::-webkit-slider-runnable-track{
-    background:#ccc;
+    background:#999;
 }
 #mapdate{/* #mapdate slider for Firefox*/
-    border:1px solid white; /*fix for FF unable to apply focus style bug*/
+    border:none; /*FF unable to apply focus style bug*/
     width:300px; /* required for proper track sizing in FF*/
 }
 #mapdate::-moz-range-track{
     width:300px;
     height:5px;
-    background:#ddd;
+    background:#999;
     border:none;
     border-radius:3px;
 }
@@ -118,14 +114,14 @@ body{
     height:16px;
     width:16px;
     border-radius: 50%;
-    background: goldenrod;
+    background: #76daff;
 }
 #mapdate:-moz-focusring{ /* hide the outline behind the border*/
     outline:1px solid white;
     outline-offset:-1px;
 }
 #mapdate:focus::-moz-range-track{
-    background:#ccc;
+    background:#999;
 }
 #mapdate::-ms-track { /* for IE 10+ */
     width: 300px;
@@ -142,11 +138,11 @@ body{
     color: transparent;
 }
 #mapdate::-ms-fill-lower {
-    background: #777;
+    background: #999;
     border-radius: 10px;
 }
 #mapdate::-ms-fill-upper {
-    background: #ddd;
+    background: #999;
     border-radius: 10px;
 }
 #mapdate::-ms-thumb {
@@ -154,22 +150,24 @@ body{
     height: 16px;
     width: 16px;
     border-radius: 50%;
-    background: goldenrod;
+    background: #76daff;
 }
 #mapdate:focus::-ms-fill-lower {
-    background: #888;
+    background: #999;
 }
 #mapdate:focus::-ms-fill-upper {
-    background: #ccc;
+    background: #999;
 }
 
 #map-text{
   position:absolute;
-  left:5%;
-  top:10px;
-  background-color:rgba(0,0,0,0.6);
-    padding:3px;
-    padding-bottom:10px;
+  left:0px;
+  top:0px;
+  background-color:rgba(37, 37, 39, 0.7);
+    padding-right:7px;
+    padding-bottom:12px;
+    padding-left:5%;
+    padding-top:10px;
 }
 /*#map-data{
     background-color:rgba(0,0,0,0.6);
@@ -181,9 +179,38 @@ body{
   text-align:center;
 }
 #map-title{
+    color:#fff;
+    -webkit-text-fill-color:transparent;
+  background: -webkit-linear-gradient(#fff, #999); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#fff, #999); /* For Opera 11.1 to 12.0 */
+  -webkit-background-clip:text;
+}
+#map-title{
     position:relative;
 }
 #paper1{
     margin-top:30px;
+}
+#map-reset{
+    margin-top:20px;
+    margin-right:7px;
+    margin-bottom:2px;
+    vertical-align:middle;
+    float:right;
+    background-color:#252527;
+    border:1px solid #76daff;
+    color:#76daff;
+    width:75px;
+    height:32px;
+    border-radius:4px;
+}
+#map-reset:hover{
+    cursor:pointer;
+    color:#fff;
+    border:1px solid #fff;
+    transition-duration: 0.3s;
+}
+#map-reset p{
+    margin:7px;
 }
 /* End of Map Page */

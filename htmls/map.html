@@ -15,8 +15,11 @@
     <div id="map-wrapper">
         <div id="paper1"></div>
         <div id="map-text">
-            <h1 id='map-title'>PM2.5 Index</h1>
+            <div id="title-holder">
+                <h1 id='map-title'>PM2.5 Index</h1>
+            </div>
             <table id="map-data"></table>
+            <div id="map-reset" type="button" onClick="window.location.reload()"><p>Reset</p></div>
         </div>
 
         <table id="mapinfo">
@@ -26,7 +29,6 @@
                 <td>15/11/2014</td>
             </tr>
         </table>
-        <button id="mapreset" type="button" action="setPaper">Reset</button>
     </div>
   <script type="text/javascript" src="js/map-china-2013.js"></script>
   </body>
