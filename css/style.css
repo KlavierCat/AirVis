@@ -9,6 +9,9 @@ body{
     color:#ffffff;
     margin:7%;
 }
+.front a {
+    color: white;
+}
 .front h1{
     font-family:"Times New Roman", Times, serif;
     font-size:5em;
